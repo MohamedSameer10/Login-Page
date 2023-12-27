@@ -37,5 +37,19 @@
             </div>
         </form>
     </div>
+
+    <script>
+        let passwordInput = document.querySelector("#password")
+        let lock = passwordInput.nextElementSibling
+
+        lock.addEventListener("click",()=>{
+           if(lock.classList.toggle("fa-lock-open")){
+                passwordInput.setAttribute("type","text")
+           }
+           else{
+                passwordInput.setAttribute("type","password")
+           }
+        })
+    </script>
 </body>
 </html>     
